@@ -12,9 +12,6 @@
   </head>
   <body>
     FUCK!this ide
-
-
-
   <h1>FUCK!!!!!!!!!!!!!!!!!!</h1>
   </body>
 </html>
