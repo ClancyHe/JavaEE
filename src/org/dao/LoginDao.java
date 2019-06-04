@@ -17,6 +17,7 @@ public class LoginDao {
 				login.setName(rs.getString(2));
 				login.setPassword(rs.getString(3));
 				login.setRole(rs.getBoolean(4));
+				System.out.println("1");
 				return login;								
 			}
 			return null;									
