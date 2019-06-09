@@ -20,6 +20,11 @@
             <s:reset value="重置"/>
         </td>
     </tr>
+    <tr>
+        <td>
+            <font color="red"><s:fielderror/><s:property value="message"/></font>
+        </td>
+    </tr>
 </table>
 </s:form>
 </body>

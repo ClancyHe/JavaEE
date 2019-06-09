@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://sruts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+    <field name="doctor.dno">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>编号不能为空哦！</message>
+        </field-validator>
+    </field>
+    <field name="doctor.dname">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>姓名也是呢！</message>
+        </field-validator>
+    </field>
+    <field name="doctor.telephone">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>联系方式也是呢！</message>
+        </field-validator>
+    </field>
+    <field name="doctor.departmentno">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>隶属科室也是呢！</message>
+        </field-validator>
+    </field>
+</validators>

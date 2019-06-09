@@ -3,13 +3,22 @@
 <!DOCTYPE struts PUBLIC
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
-
 <struts>
     <package name="default" extends="struts-default">
         <action name="login" class="org.action.LoginAction">
-            <result name="success">/main.jsp</result>
+            <result name="admin">/admin.jsp</result>
             <result name="error">/error.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+        <action name="doctor" class="org.action.DoctorAction">
+            <result name="success">/doctormanage.jsp</result>
+            <result name="input">/doctormanage.jsp</result>
+            <interceptor-ref name="defaultStack">
+                <param name="validation.excludeMethods">*</param>
+                <param name="validation.includeMethods">addDoctor,updateDoctor</param>
+            </interceptor-ref>
         </action>
     </package>
     <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
 </struts>
